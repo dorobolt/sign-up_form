@@ -3,6 +3,10 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root {
+    font-size: 12px;
+}
+
 @font-face {
     font-family: my-cool-font;
     src: url(./font/Norse-Bold.otf);
@@ -61,7 +65,7 @@ body {
 }
 
 #credit {
-    font-size: 12px;
+    font-size: 1rem;
     bottom: 10px;
     color: white;
     display: flex;
@@ -82,13 +86,84 @@ body {
 
 #opening {
     padding: 100px 200px 20px 40px;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 #form {
-    height: 30%;
+    height: 50%;
     background-color: white;
     box-shadow: 10px 5px 5px rgb(116, 112, 112);
     margin: 0;
+    padding: 40px;
+    font-size: 1rem;
+}
+
+#form>div {
+    display: flex;
+    gap: 100px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 100px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    outline: none;
+    border-radius: 5px;
+    height: 24px;
+    width: 250px;
+}
+
+input:focus {
+    border: 1px solid rgb(33, 33, 255);
+    box-shadow: 2px 2px 2px rgb(53, 54, 54);
+}
+
+input:valid {
+    border: 1px solid greenyellow;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#same {
+    font-size: 1rem;
+    color: red;
+    padding-left: 10px;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    font-size: 1.6rem;
+}
+
+#signbutton {
+    background-color: #596D48;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+}
+
+#signup>p>a {
+    color: #596D48;
 }

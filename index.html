@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -28,12 +29,48 @@
                     realize your deepest dreams. Sign up <em>now</em> to get started</p>
                 <p>You know you want to.</p>
             </div>
-            <div id="form">
-
-            </div>
+            <form action="#" method="post">
+                <div id="form">
+                    <h1>Let's do this!</h1>
+                    <fieldset>
+                        <div class="forms">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="forms">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="forms">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="forms">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{3,}">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="forms">
+                            <label for="password">PASSWORD (min 8 chr)</label>
+                            <input type="password" id="password" class="error" name="password" required minlength="8">
+                        </div>
+                        <div class="forms">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm" class="error" name="confirm" required minlength="8">
+                        </div>
+                    </fieldset>
+                    <div id="same"></div>
+                </div>
+                <div id="signup">
+                    <button type="submit" id="signbutton">Create Account</button>
+                    <p>Already have an account? <a href="#">&nbsp;Log in</a></p>
+                </div>
+            </form>
         </div>
     </div>
-
 </body>
 
 </html>
